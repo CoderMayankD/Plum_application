@@ -1,0 +1,159 @@
+Plum DA Assignment for Data Analyst Position
+____________________________________________________________________________________________________
+
+Shape of Data: (16476, 24)
+____________________________________________________________________________________________________
+
+- All Columns : 
+0) Id : int64
+1) Requester id : int64
+2) Group : object
+3) Status : object
+4) Priority : object
+5) Via : object
+6) Created at : datetime64[ns]
+7) Initially assigned at : datetime64[ns]
+8) Assigned at : datetime64[ns]
+9) Solved at : datetime64[ns]
+10) Updated at : datetime64[ns]
+11) CreatedToUpdated_Days : int64
+12) Resolution time : float64
+13) Satisfaction Score : object
+14) Reopens : int64
+15) Replies : int64
+16) First reply time in minutes within business hours : float64
+17) First resolution time in minutes : float64
+18) First resolution time in minutes within business hours : float64
+19) Full resolution time in minutes : float64
+20) Full resolution time in minutes within business hours : float64
+21) Requester wait time in minutes : float64
+22) Requester wait time in minutes within business hours : float64
+23) Manual Tagging of Categories : object
+- Maximum issues raised in Endorsements group (6,449 out of 16,476), 
+    with a highest Issue Per requester ratio of 3.33x, where average Issue 
+    raised per requester is 2.44.
+- By Group: Highest load is over Endorsements Group issues whereas least load 
+    is over Onboardings Group issues.
+- Let's Check how many non null values we have in whole dataset. 
+    This will help to identify least populated variable in the dataset
+    which should be taken into consideration.
+- By Status:  Endorsements Group has most Solved  ~40% of Total Solved Issues (2139).
+____________________________________________________________________________________________________
+
+Reference for Group Table - C: Users MAYANK Pictures Screenshots Screenshot 2023-07-15 175439.png
+- 74.5% of all issues have been Closed. Where only 13% of all issues were solved.
+____________________________________________________________________________________________________
+
+
+Found out that: 
+columns : 
+-  "Solved at",
+-  "Resolution time", 
+-  'Full resolution time in minutes', &
+-  'Full resolution time in minutes within business hours'...
+these have same number of non null values ( i.e.,  14409)*
+
+and least non null values were noticed in* columns- 
+-  "Satisfaction Score" (i.e,  5453)
+    
+- Mannual Tagging of Catagories have "-" about 13923 times that should be condered later.
+- Comparing "Solved At" and " Satisfaction score" to see if there is any relation?
+____________________________________________________________________________________________________
+
+- Found out that all the null Satifaction Score rows has Solved at also null.
+May conclude to that- All the missing Satisfaction Score rows are never been solved
+____________________________________________________________________________________________________
+
+-  Using Catogorical Dataframe from Main Dataset as :
+    ['Group', 'Status', 'Priority', 'Via','Satisfaction Score', 'Reopens', 'Replies','Manual Tagging of Categories'] 
+____________________________________________________________________________________________________
+
+>> Group:
+Endorsements            6449
+Support                 5670
+Reimbursement Claims    3827
+Onboardings              530
+Name: Group, dtype: int64
+---------------------------------------
+____________________________________________________________________________________________________
+
+>> Status:
+Closed     12270
+Solved      2139
+Hold         790
+Pending      681
+Open         470
+New          126
+Name: Status, dtype: int64
+---------------------------------------
+____________________________________________________________________________________________________
+
+>> Priority:
+Low       16282
+Urgent      182
+Normal       12
+Name: Priority, dtype: int64
+---------------------------------------
+____________________________________________________________________________________________________
+
+>> Via:
+Mail                      13081
+Internal Communication     2028
+OutBound                   1051
+Closed Ticket               316
+Name: Via, dtype: int64
+---------------------------------------
+____________________________________________________________________________________________________
+
+>> Satisfaction Score:
+Offered    4640
+5           409
+4           311
+3            64
+1            15
+2            14
+Name: Satisfaction Score, dtype: int64
+---------------------------------------
+____________________________________________________________________________________________________
+
+>> Manual Tagging of Categories:
+Claims                              904
+Is my treatment covered (IMTC)      678
+HR Queries                          266
+Others                              159
+Manage dependents                   148
+Health ID                           131
+Health Benefits                      75
+Not Applicable                       74
+Super Topup (STU)                    70
+Network or Blacklisted Hospitals     28
+Telehealth                           20
+Name: Manual Tagging of Categories, dtype: int64
+---------------------------------------
+____________________________________________________________________________________________________
+
+1) Let's Note Down Statisfaction Score related Insights
+____________________________________________________________________________________________________
+
+Offered    4640
+5           409
+4           311
+3            64
+1            15
+2            14
+Name: Satisfaction Score, dtype: int64
+____________________________________________________________________________________________________
+
+- Created a power BI Dashboard cum Table to analyse all graphics using designated catogorical Slicers as per need.
+    let's point the insights for the Satisfaction score in whole data: 
+____________________________________________________________________________________________________
+
+# Questions to be noted from Data: #
+____________________________________________________________________________________________________
+
+Q1. People with incomplete resolution even after reopening of their issues.
+Q2. Difference between the full time resolution and first time resolution timing. Compare by  Department, Priority, Status, Via.
+Q3. And how many people are there who are getting a need to reopen their issues and they do not get full revolution even after they getting reopened?
+Q4. Reopening based on categories.
+Q5. Why Repopening and Replies relation  +0.37 and not nearly 1. Which department or which category doesnt reply according to the reopenings. 
+Q6. Satisfaction Score vs other factors.
