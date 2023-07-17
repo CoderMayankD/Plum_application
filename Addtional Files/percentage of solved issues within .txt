@@ -1,0 +1,92 @@
+ percentage of solved issues within each categories:
+category "claims"solved 9.6% of all the issues which were tagged in that category.  
+category "IMTC"solved 8.99% of all the issues which were tagged in that category. 
+category "HR Queries"solved 13.64% of all the issues which were tagged in that category.
+category "Health ID"solved 13.82% of all the issues which were tagged in that category. 
+category "Management develpoments"solved 11.9% of all the issues which were tagged in that category.  
+category "Not Applicable"solved 14.94% of all the issues which were tagged in that category. 
+category "others"solved 7.02% of all the issues which were tagged in that category. 
+category "Health Benefits"solved 12.79% of all the issues which were tagged in that category. 
+category "SuperTopUp"solved 13.58% of all the issues which were tagged in that category. 
+category "INetwork and Blockedlisted Hospital"solved 3.45% of all the issues which were tagged in that category. 
+category "Telehealth"solved 4.76% of all the issues which were tagged in that category. 
+
+
+reimbursement and endorsements have most issues to be resolved.  
+
+
+time study 
+urgent priority are taking most avg assignment time. 
+as per it's priority its solved very quickly. 
+It appears to be that cases priority is beign decided after the intial assigned date.
+
+
+
+Time study category by resoltuion time (except HR Queries)-
+urgent priority ticket in endroesment and claim group 
+lies in the categories which are not manually tagged. 
+
+urgent tickets take 110 hours 
+support takes and not manually tagged are the quickest of all taking on an avg of (56- 104.8 days) ticket via mails 
+
+low priority and onboarding which are not manually taged categories are taking on an avg of(591.32 - 604.7 days) via mails
+
+mode of solving the ticket is quickest via internal communication. 
+total tickets raised by internal communication 2028. in which 143 are solved. 
+and slowest via mail 13k tickets in which 1819 are solved 
+Points to improvement : 
+fastest and slowest on the bases on per query solved time in the category then we can truely decide that quick and slow. 
+
+
+Analyses per reply :
+Quick: among priority Normal has the quickest resolution 44.11  time per reply followed by urgent priority 45.70  
+Where as the slowest resolution time is of low priority with apporx. 83.89 hours which is just double of the slowest one. 
+
+
+priority is all about timing with respect to group 
+Ticket in reimbestment claims group with normal priority has the quickest resolution time per reply followed by support group having 44.16 
+
+
+URGENT: where as tickets with the urgent priority has quickest resolution time per reply in support group 44.73 hrs.
+
+Category study with respect to the reply time:
+
+1.Normal priority tickets tagged under IMTC has very significantely quickest resolution time per reply 1.23hours followed by claims categories with 1.80 hours of resolution time per reply.
+
+2.Where as ticket with urgent priority has quickest time under the category which are not tagged manually 45.51 hrs of resolution timeto solve under urgent and hence it can be called the quickest among all other category.
+
+3. category with Network or Blacklisted Hospitals, health benifits, IMTC and others have marely similar quickest resolution time per low prioirty replies where as not tagged has hightest resolution time for low priority ticket with 94.75 hrs resolution time per reply. 
+
+
+quickest and slowest route of solving tickets. 
+1.  via internal communication it takes only 28.17 hrs of resolution time per reply, where as via mail it takes 92.21 hrs of resolution time per reply i.e that implies internal communication is fastest and mail is slowest route of solving ticket. 
+It has been noticed that internal communication route of replies has more than 3 times faster resolution time per reply as comparied to the slowest (via mail).
+
+resolution time per reply by status:
+Urgent priority tickets which where solved has more than double resolution time per reply as compared to time taken by avg of all total urgent priority tickets resolution time per reply. 
+
+i.e. urgent priority - resolution time per reply 45. 70 hrs and urgent with solved status has 109.09hrs.   
+
+It has been noticed that urgent ticket with the closed status has better resoltution time with respect to most of the urgent ticket i.e 41.12. 
+ 
+
+They are taking double time in solving the ticket then to close the ticket. 
+
+
+   
+
+  
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
